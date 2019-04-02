@@ -1,0 +1,14 @@
+{
+  "name": "Tugas MWS",
+  "short_name": "MWS",
+  "scope": "/",
+  "icons": [{
+    "src": "/friendship.png",
+    "sizes": "512x512 256x256 144x144",
+    "type": "image/png"
+  }],
+  "display": "standalone",
+  "start_url": "/index.html",
+  "background_color": "#FFFFFF",
+  "theme_color": "#3F51B5"
+}

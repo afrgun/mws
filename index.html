@@ -1,6 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en"> 
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="lightblue">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" content="Google Developer Kejar">
+        <link rel="manifest" href="manifest.json">
+        <link rel="shortcut icon" type="image/png" href="friendship.png"/>
         <title> MWS AFRILA GUNADI </title>
         <style>
 
@@ -13,7 +21,7 @@
                 display: grid;
                 width: 100%;
                 grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: 30px 100px 100px 100px 30px;
+                grid-template-rows: 35px 80px 80px 80px 30px;
                 grid-row-gap: 4px;
                 grid-column-gap: 4px;
             }
@@ -21,48 +29,90 @@
             .menu{
                 background: lightblue;
                 grid-column: 1/5;
+                padding: 3px 0px;
             }
 
             .sidebar{
                 background: lightyellow;
                 grid-column-end: 1/2;
                 grid-row: 2/5; 
+                display: flex;
+                display: -webkit-flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                
             }
 
             img{
                 width: 100%;
-                height: auto;
+                height: 100%;
+                object-fit: cover;
             }
 
             .icon-menu{
                 max-width: 25px;
                 height: auto;
                 display: block;
+                margin-left: 15px;
             }
 
             .konten{
-                background: pink;
-                grid-column: 2/5;    
+                background: #dddddd;
+                grid-column: 2/5;
+                padding: 5px;  
+                text-align: center;  
+                display: flex;
+                display: -webkit-flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                transition: 1s;
+                -webkit-transition: 1s;
+                color: #000000;
             }
+
+            .konten:hover{
+                background: #717171;
+                color: #ffffff;
+                font-weight: bold;
+            }
+
             .footer{
-                background: lime;
+                background: #b5d7e4;
                 grid-column: 1/5;
                 grid-row: 5/5;
+                display: flex;
+                display: -webkit-flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            a{
+                text-decoration: none;
+                color: #000000;
+            }
+
+            a:hover{
+                color: #ffffff;
             }
             
         </style>
     </head>
+    <main role="main">
 
-    <body>
+        <body>
+            <div class="container">
 
-        <div class="container">
-
-            <div class="menu"><img src="icon.png" class="icon-menu" alt="icon"/></div>
-            <div class="sidebar"><img src="avatar.JPG" alt="avatar"/></div>
-            <div class="konten"><a href="project1/add2numbers.html" target="_blank">Menjumlahkan dua angka</a></div>
-            <div class="konten">Konten 2</div>
-            <div class="konten"><a href="project2/index.html">Lokasi istimewa dengan mapbox</a></div>
-            <div class="footer">Afrila Gunadi</div>
-        </div>
-    </body>
+                <div class="menu"><img src="icon.png" class="icon-menu" alt="icon"/></div>
+                <div class="sidebar"><img src="avatar.jpg" alt="avatar"/></div>
+                <div class="konten"><a href="project1/add2numbers.html" target="_blank">Menjumlahkan dua angka</a></div>
+                <div class="konten"><a href="project2/index.html">Lokasi istimewa dengan mapbox</a></div>
+                <div class="konten">Cooming Soon</div>
+                <div class="footer">&copy; Afrila Gunadi</div>
+            </div>
+        </body>
+    </main>
+    <script src="main.js" type="text/javascript"></script>
 </html>
